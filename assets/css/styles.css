@@ -4,81 +4,98 @@
   box-sizing: border-box;
 }
 
-section {
-  min-height: 100vh;
-}
-
 #header-image {
   background-image: url("../../assets/img/header-image.png");
   width: 100%;
-  height: 60vh;
+  height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+#header-button {
+  position: absolute;
+  width: 170px;
+  height: 26px;
+  left: 199px;
+  top: 268px;
+  background-color: #5BB92E;
+  border-radius: 10px;
+  font-family: 'Inter Regular';
+  font-size: 12px;
+  border-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  line-height: 0;
 }
 
 #navigation {
   background-color: #373737F2;
+  font-family: 'Inter Thin BETA';
+  font-style: normal;
+  --bs-navbar-padding-x: 35px;
 }
 
 #nav-logo {
-  font-size: 30px;
-  margin-left: -10px;
-}
-
-.nav-link {
+  margin-left: 30px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 #nav-logo, .nav-link {
   color: white;
 }
 
-.nav-item {
-  margin: 0 15px;
+.nav-item:not(:last-child) {
+  margin-right: 110px;
+  font-size: 15px;
 }
 
-.with-arrow {
-  margin-right: 30px;
+section {
+  min-height: 100vh;
+  padding-top: 100px;
 }
 
-.with-arrow::after {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background: url("../../assets/img/arrow.png") no-repeat;
+/* Contact Section */
+
+#contact-us {
+  background-color: #408DADCC;
+  text-align: center;
+}
+
+#right-col {
+  margin-left: 35px;
+  font-family: 'Inter Regular';
+}
+
+#right-col .card, #right-col .card-body {
+  background-color: #D9D9D9;
+  border-radius: 30px;
+  width: 700px;
+}
+
+#right-col button {
+  background-color: #4CA7CECC;
+  font-size: 12px;
+  width: 70px!important;
+  height: 27px;
+  line-height: 0;
+}
+
+#left-col {
+  margin-left: -50px;
+  position: relative;
+  color: white;
+}
+
+#left-col h2 {
+  font-family: 'Inter Regular';
+}
+
+#left-img {
   position: absolute;
-  margin: 10px 0 0 5px;
-}
-
-.modal {
-  --bs-modal-zindex: 1055;
-  --bs-modal-width: 500px;
-  --bs-modal-padding: 1rem;
-  --bs-modal-margin: 0.5rem;
-  --bs-modal-bg: #fff;
-  --bs-modal-border-color: var(--bs-border-color-translucent);
-  --bs-modal-border-width: 1px;
-  --bs-modal-border-radius: 0.5rem;
-  --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  --bs-modal-inner-border-radius: calc(0.5rem - 1px);
-  --bs-modal-header-padding-x: 1rem;
-  --bs-modal-header-padding-y: 1rem;
-  --bs-modal-header-padding: 1rem 1rem;
-  --bs-modal-header-border-color: var(--bs-border-color);
-  --bs-modal-header-border-width: 1px;
-  --bs-modal-title-line-height: 1.5;
-  --bs-modal-footer-gap: 0.5rem;
-  --bs-modal-footer-border-color: var(--bs-border-color);
-  --bs-modal-footer-border-width: 1px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--bs-modal-zindex);
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  outline: 0;
+  width: 352px;
+  left: 60px;
+  top: 100px;
 }
 

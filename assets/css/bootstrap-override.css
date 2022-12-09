@@ -1,0 +1,20 @@
+/* button hover & focus */
+
+.nav-link:focus, .nav-link:hover {
+  color: white;
+}
+
+/* button active */
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: white;
+  font-family: 'Inter Regular';
+}
+
+/* contact form top & bottom padding */
+
+.py-4 {
+  padding-top: 0rem!important;
+  padding-bottom: 0rem!important;
+}
+

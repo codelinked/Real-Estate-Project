@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Real Estate</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Thin%20BETA.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-override.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+<body data-bs-spy="scroll" data-bs-target="#navigation" data-bs-smooth-scroll="true">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-sign">
         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div>
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Sign</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
                     </ul>
                     <div class="tab-content">
@@ -30,16 +34,16 @@
             </div>
         </div>
     </div>
-    <header id="header-image"></header>
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="navigation">
-        <div class="container"><a class="navbar-brand" id="nav-logo" href="#">Logo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <header id="header-image"><button class="btn btn-primary" id="header-button" type="button">BROWSE LISTING</button></header>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" id="navigation">
+        <div class="container-fluid"><a class="navbar-brand" id="nav-logo" href="#">Logo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto" id="nav-group">
-                    <li class="nav-item"><a class="nav-link with-arrow" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link with-arrow" href="#about-us">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link with-arrow" href="#services">Services</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-1">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-sign">Sign In</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +51,32 @@
     <section id="home"></section>
     <section id="about-us"></section>
     <section id="services"></section>
-    <section id="contact-us"></section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-5" id="left-col">
+                    <h2>We’d Love To Hear From You!</h2>
+                    <p>You want to get in touch? Fill out the form then reach out and get connected.</p><img id="left-img" src="assets/img/contact-image.png">
+                </div>
+                <div class="col-6" id="right-col">
+                    <div class="card mb-5">
+                        <div class="card-body p-sm-5">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col"><input class="form-control" type="text" id="name-3" name="fname" placeholder="First Name"></div>
+                                    <div class="col"><input class="form-control" type="text" id="name-4" name="lname" placeholder="Last Name"></div>
+                                </div>
+                                <div class="mb-3"></div>
+                                <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email Address"></div>
+                                <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
+                                <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
