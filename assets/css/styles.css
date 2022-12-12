@@ -6,19 +6,17 @@
 
 #header-image {
   background-image: url("../../assets/img/header-image.png");
-  width: 100%;
-  height: 62vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 #header-button {
+  left: 199px;
+  top: 268px;
+}
+
+.green-buttons {
   position: absolute;
   width: 170px;
   height: 26px;
-  left: 199px;
-  top: 268px;
   background-color: #5BB92E;
   border-radius: 10px;
   font-family: 'Inter Regular';
@@ -57,89 +55,45 @@ section {
 }
 
 /* Home Section */
-#home {
-  background-image: url("../../assets/img/home-image.png");
+
+.home-bg-images {
   width: 100%;
   height: 62vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+}
+
+#home {
+  background-image: url("../../assets/img/home-image.png");
+  background-position: center;
 }
 
 #home-buying-section {
   background-image: url("../../assets/img/home-buying-section.png");
-  width: 100%;
-  height: 62vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 #home-buying-button {
-  position: absolute;
-  width: 170px;
-  height: 26px;
   left: 342px;
   bottom: 50px;
-  background-color: #5BB92E;
-  border-radius: 10px;
-  font-family: 'Inter Regular';
-  font-size: 12px;
-  border-color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-  line-height: 0;
 }
 
 #home-selling-section {
   background-image: url("../../assets/img/home-selling-section.png");
-  width: 100%;
-  height: 62vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 #home-selling-button {
-  position: absolute;
-  width: 170px;
-  height: 26px;
   left: 935px;
   bottom: 50px;
-  background-color: #5BB92E;
-  border-radius: 10px;
-  font-family: 'Inter Regular';
-  font-size: 12px;
-  border-color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-  line-height: 0;
 }
 
 #home-rental-section {
   background-image: url("../../assets/img/home-rental-section.png");
-  width: 100%;
-  height: 62vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
 }
 
 #home-rental-button {
-  position: absolute;
-  width: 170px;
-  height: 26px;
   left: 345px;
   bottom: 100px;
-  background-color: #5BB92E;
-  border-radius: 10px;
-  font-family: 'Inter Regular';
-  font-size: 12px;
-  border-color: transparent;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-  line-height: 0;
 }
 
 /* Contact Section */
@@ -184,3 +138,4 @@ section {
   left: 60px;
   top: 100px;
 }
+

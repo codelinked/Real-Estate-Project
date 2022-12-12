@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/Inter%20Thin%20BETA.css">
     <link rel="stylesheet" href="assets/css/bootstrap-override.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -19,14 +20,14 @@
             <div class="modal-content">
                 <div>
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane" role="tabpanel" id="tab-1">
+                        <div class="tab-pane active" role="tabpanel" id="tab-1">
                             <p>Content for tab 1.</p>
                         </div>
-                        <div class="tab-pane active" role="tabpanel" id="tab-2">
+                        <div class="tab-pane" role="tabpanel" id="tab-2">
                             <p>Content for tab 2.</p>
                         </div>
                     </div>
@@ -34,9 +35,9 @@
             </div>
         </div>
     </div>
-    <header id="header-image"><button class="btn btn-primary" id="header-button" type="button">BROWSE LISTING</button></header>
+    <header id="header-image" class="home-bg-images"><button class="btn btn-primary green-buttons" id="header-button" type="button">BROWSE LISTING</button></header>
     <nav class="navbar navbar-light navbar-expand-md sticky-top" id="navigation">
-        <div class="container-fluid"><a class="navbar-brand" id="nav-logo" href="#"><img src="assets/img/header-logo.png" height=45 width=300></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container-fluid"><a class="navbar-brand" id="nav-logo" href="#"><img src="assets/img/header-logo.png" height="45" width="300"></a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
@@ -48,10 +49,10 @@
             </div>
         </div>
     </nav>
-    <section id="home"></section>
-    <section id="home-buying-section"><button class="btn btn-primary" id="home-buying-button" href="#" type="button">Click Here!</button></section>
-    <section id="home-selling-section"><button class="btn btn-primary" id="home-selling-button" href="#" type="button">Click Here!</button></section>
-    <section id="home-rental-section"><button class="btn btn-primary" id="home-rental-button" href="#" type="button">Click Here!</button></section>
+    <section id="home" class="home-bg-images"></section>
+    <section id="home-buying-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-buying-button" type="button">Click Here!</button></section>
+    <section id="home-selling-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-selling-button" type="button">Click Here!</button></section>
+    <section id="home-rental-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-rental-button" type="button">Click Here!</button></section>
     <section id="about-us"></section>
     <section id="services"></section>
     <section id="contact-us">
@@ -80,6 +81,43 @@
             </div>
         </div>
     </section>
+    <footer class="text-white bg-dark" id="footer-bg">
+        <div class="d-flex justify-content-between align-items-center pt-3" id="footer-top-text">
+            <p class="mb-0">Stay connected with us on our social networks:</p>
+        </div>
+        <div class="container-fluid py-4 py-lg-5">
+            <div class="row justify-content-center" id="footer-row">
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" id="footer-logo">
+                    <h3 class="fs-6 text-white"><span id="digital-blue">Digital&nbsp;</span><span id="palm-green">Palm&nbsp;</span><span>Resources</span></h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light" href="#">About Digital Palm Resources</a></li>
+                        <li><a class="link-light" href="#">Terms and Conditions</a></li>
+                        <li><a class="link-light" href="#">Privacy and Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xl-3 text-center text-lg-start d-flex flex-column item" id="footer-about-us">
+                    <h3 class="fs-6 text-white">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur dignissim ipsum, a volutpat magna sagittis ac. Ut faucibus velit vel magna vulputate, vel elementum turpis scelerisque.</p>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" id="footer-useful-links">
+                    <h3 class="fs-6 text-white">Customer Care</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light" href="#">Help Center</a></li>
+                        <li><a class="link-light" href="#">Credentials and Expertise</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item" id="footer-contacts">
+                    <h3 class="fs-6 text-white">Contacts</h3>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light" href="#">Home Address</a></li>
+                        <li><a class="link-light" href="#">Email Address</a></li>
+                        <li><a class="link-light" href="#">Phone Number</a></li>
+                        <li><a class="link-light" href="#">Telephone Number</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </body>
