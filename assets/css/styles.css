@@ -82,9 +82,22 @@ section {
 }
 
 #home {
-  background-image: url("../../assets/img/home-image.png");
-  background-position: center;
+  background-image: url("../../assets/img/home-image.jpg");
+  position: relative;
+  background-size: cover;
 }
+
+.float-text p {
+    max-width: 400px;
+    font-size: 16px;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    float: left;
+    margin-left: 800px;
+    margin-top: 225px;
+  }
 
 #home-buying-button {
   left: 342px;
@@ -134,4 +147,3 @@ section {
   left: 60px;
   top: 100px;
 }
-
