@@ -92,11 +92,25 @@ section {
     font-size: 16px;
     text-align: justify;
     font-style: italic;
-    font-weight: bold;
     color: white;
     float: left;
-    margin-left: 800px;
-    margin-top: 225px;
+    margin-left: 750px;
+    margin-top: -250px;
+  }
+
+.logo{
+  width: 450px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.logo-brand {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-left: 650px;
+    margin-top: -400px;
   }
 
 #home-buying-button {
