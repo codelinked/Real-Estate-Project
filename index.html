@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navigation" data-bs-smooth-scroll="true">
@@ -35,7 +36,12 @@
             </div>
         </div>
     </div>
-    <header id="header-image" class="home-bg-images"><button class="btn btn-primary green-buttons" id="header-button" type="button">BROWSE LISTING</button></header>
+    <header id="header-image" class="home-bg-images">
+        <div id="texts-and-button">
+            <h1>Find Your Dream Home With Our<br>Help!</h1>
+            <p>Buy, Rent, and Sell Houses With Ease.</p><button class="btn btn-primary green-buttons" id="header-button" type="button">BROWSE LISTING</button>
+        </div>
+    </header>
     <nav class="navbar navbar-light navbar-expand-md sticky-top" id="navigation">
         <div class="container-fluid"><a class="navbar-brand" id="nav-logo" href="#"><img src="assets/img/header-logo.png" height="45" width="300"></a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -50,9 +56,56 @@
         </div>
     </nav>
     <section id="home" class="home-bg-images"></section>
-    <section id="home-buying-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-buying-button" type="button">Click Here!</button></section>
-    <section id="home-selling-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-selling-button" type="button">Click Here!</button></section>
-    <section id="home-rental-section" class="home-bg-images"><button class="btn btn-primary green-buttons" id="home-rental-button" type="button">Click Here!</button></section>
+    <section id="home-timeline">
+        <div id="top-image-border">
+            <div id="top-image"></div>
+        </div>
+        <div class="row">
+            <div class="col col-lines"><img id="first-line" src="assets/img/timeline/line1.png" draggable="false"></div>
+        </div>
+        <div class="row">
+            <div class="col col-blue-box">
+                <div class="img-txt-btn-container float-right"><img src="assets/img/timeline/box1.png" draggable="false">
+                    <div class="paragraph-and-button">
+                        <p>Do you have a plan for moving and settling into your new home?</p><button class="btn btn-primary timeline-green-buttons" id="home-buying-button" type="button">Click Here!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center col-texts">
+                <p class="float-left">“Buying a house is a significant life event that requires careful consideration of one's budget and desired lifestyle, as well as getting pre-approved for a mortgage and conducting a home inspection. It also involves negotiating the price and closing costs and signing the closing paperwork. Having a plan and doing research can help ensure a successful home-buying process.”</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lines"><img src="assets/img/timeline/line2.png" draggable="false"></div>
+        </div>
+        <div class="row">
+            <div class="col align-self-center col-texts">
+                <p class="float-right">Selling a house involves preparing the home for sale, advertising the property, receiving and negotiating offers, preparing necessary documents, transferring utilities and other services, setting a date for the closing and moving out, and considering your next steps. A successful sale requires careful planning and execution of each step.</p>
+            </div>
+            <div class="col col-blue-box">
+                <div class="img-txt-btn-container float-left"><img src="assets/img/timeline/box2.png" draggable="false">
+                    <div class="paragraph-and-button">
+                        <p>What is your asking price for the home?</p><button class="btn btn-primary timeline-green-buttons" id="home-buying-button-1" type="button">Click Here!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lines"><img src="assets/img/timeline/line3.png" draggable="false"></div>
+        </div>
+        <div class="row">
+            <div class="col col-blue-box">
+                <div class="img-txt-btn-container float-right"><img src="assets/img/timeline/box3.png" draggable="false">
+                    <div class="paragraph-and-button">
+                        <p>What type of rental property are you looking for?</p><button class="btn btn-primary timeline-green-buttons" id="home-buying-button-2" type="button">Click Here!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-center col-texts">
+                <p class="float-left">“When renting a house, it's important to find a property that fits your budget and desired features, check the landlord's references and the property's condition, understand the rental agreement, transfer utilities and other services, pay the security deposit and first month's rent, obtain renter's insurance, and set a date for moving in. Careful planning and execution of each step can help ensure a successful rental experience.”</p>
+            </div>
+        </div>
+    </section>
     <section id="about-us"></section>
     <section id="services"></section>
     <section id="contact-us">

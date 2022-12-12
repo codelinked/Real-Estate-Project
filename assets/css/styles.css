@@ -4,13 +4,31 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #header-image {
   background-image: url("../../assets/img/header-image.png");
+  position: relative;
+}
+
+#texts-and-button {
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin: 130px 50px;
+}
+
+#texts-and-button h1 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #header-button {
-  left: 199px;
-  top: 268px;
+  position: relative!important;
+  left: 0;
+  top: 0;
 }
 
 .green-buttons {
@@ -51,7 +69,6 @@
 
 section {
   min-height: 100vh;
-  padding-top: 100px;
 }
 
 /* Home Section */
@@ -69,31 +86,9 @@ section {
   background-position: center;
 }
 
-#home-buying-section {
-  background-image: url("../../assets/img/home-buying-section.png");
-}
-
 #home-buying-button {
   left: 342px;
   bottom: 50px;
-}
-
-#home-selling-section {
-  background-image: url("../../assets/img/home-selling-section.png");
-}
-
-#home-selling-button {
-  left: 935px;
-  bottom: 50px;
-}
-
-#home-rental-section {
-  background-image: url("../../assets/img/home-rental-section.png");
-}
-
-#home-rental-button {
-  left: 345px;
-  bottom: 100px;
 }
 
 /* Contact Section */
@@ -101,6 +96,7 @@ section {
 #contact-us {
   background-color: #408DADCC;
   text-align: center;
+  padding-top: 125px;
 }
 
 #right-col {
