@@ -6,14 +6,13 @@
 
 #header-image {
   background-image: url("../../assets/img/header-image.png");
-  position: relative;
 }
 
 #texts-and-button {
   text-align: center;
   color: white;
   position: absolute;
-  margin: 130px 50px;
+  margin: 100px 50px;
 }
 
 #texts-and-button h1 {
@@ -63,6 +62,23 @@
   font-size: 15px;
 }
 
+#sign-in-btn::before {
+  content: '';
+  background-color: white;
+  width: 125px;
+  height: 71px;
+  position: absolute;
+  z-index: -1;
+  right: 20px;
+  bottom: 0;
+}
+
+#sign-in-btn a {
+  color: black;
+  font-family: 'Inter Regular';
+  font-weight: bold;
+}
+
 section {
   min-height: 100vh;
 }
@@ -79,40 +95,36 @@ section {
 
 #home {
   background-image: url("../../assets/img/home-image.png");
-  position: relative;
-  background-size: cover;
   background-position: center;
+  overflow: hidden;
+}
+
+#home-right-col {
+  margin-top: 80px;
 }
 
 .float-text p {
-    max-width: 500px;
-    font-size: 20px;
-    text-align: justify;
-    font-style: italic;
-    color: white;
-    float: left;
-    margin-left: 800px;
-    margin-top: -250px;
-  }
+  max-width: 500px;
+  font-size: 20px;
+  text-align: justify;
+  font-style: italic;
+  color: white;
+  float: right;
+  margin-right: -55px;
+}
 
-.logo{
+.logo {
   width: 450px;
   height: auto;
-  margin-left: 120px;
   margin-top: 100px;
 }
 
 .logo-brand {
-    width: 700px;
-    height: auto;
-    float: left;
-    margin-left: 700px;
-    margin-top: -380px;
-  }
-
-#home-buying-button {
-  left: 342px;
-  bottom: 50px;
+  width: 700px;
+  height: auto;
+  float: right;
+  margin-right: -150px;
+  margin-bottom: -20px;
 }
 
 /* Contact Section */
@@ -123,18 +135,18 @@ section {
   padding-top: 125px;
 }
 
-#right-col {
+#contact-right-col {
   margin-left: 35px;
   font-family: 'Inter Regular';
 }
 
-#right-col .card, #right-col .card-body {
+#contact-right-col .card, #contact-right-col .card-body {
   background-color: #D9D9D9;
   border-radius: 30px;
   width: 700px;
 }
 
-#right-col button {
+#contact-right-col button {
   background-color: #4CA7CECC;
   font-size: 12px;
   width: 70px!important;
@@ -142,13 +154,13 @@ section {
   line-height: 0;
 }
 
-#left-col {
+#contact-left-col {
   margin-left: -50px;
   position: relative;
   color: white;
 }
 
-#left-col h2 {
+#contact-left-col h2 {
   font-family: 'Inter Regular';
 }
 
@@ -158,3 +170,4 @@ section {
   left: 60px;
   top: 100px;
 }
+
