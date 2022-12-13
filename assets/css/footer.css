@@ -9,7 +9,7 @@
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background: rgba(97, 97, 97, 0.95)!important;
+  background-color: rgba(97, 97, 97, 0.95)!important;
 }
 
 #footer-row {
