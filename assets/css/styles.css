@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 #header-image {
   background-image: url("../../assets/img/header-image.png");
   position: relative;
