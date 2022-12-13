@@ -81,16 +81,17 @@ section {
   background-image: url("../../assets/img/home-image.png");
   position: relative;
   background-size: cover;
+  background-position: center;
 }
 
 .float-text p {
-    max-width: 400px;
-    font-size: 16px;
+    max-width: 500px;
+    font-size: 20px;
     text-align: justify;
     font-style: italic;
     color: white;
     float: left;
-    margin-left: 750px;
+    margin-left: 800px;
     margin-top: -250px;
   }
 
@@ -102,10 +103,10 @@ section {
 }
 
 .logo-brand {
-    width: 600px;
+    width: 700px;
     height: auto;
     float: left;
-    margin-left: 650px;
+    margin-left: 700px;
     margin-top: -380px;
   }
 
