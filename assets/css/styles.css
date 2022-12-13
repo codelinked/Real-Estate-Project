@@ -44,6 +44,7 @@
   background-color: #373737F2;
   font-family: 'Inter Thin BETA';
   font-style: normal;
+  height: 8vh;
   --bs-navbar-padding-x: 35px;
 }
 
@@ -66,7 +67,7 @@
   content: '';
   background-color: white;
   width: 125px;
-  height: 71px;
+  height: 8vh;
   position: absolute;
   z-index: -1;
   right: 20px;
@@ -80,7 +81,7 @@
 }
 
 section {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /* Home Section */
@@ -110,7 +111,7 @@ section {
   font-style: italic;
   color: white;
   float: right;
-  margin-right: -55px;
+  margin-right: 20px;
 }
 
 .logo {
@@ -123,7 +124,7 @@ section {
   width: 700px;
   height: auto;
   float: right;
-  margin-right: -150px;
+  margin-right: -80px;
   margin-bottom: -20px;
 }
 
@@ -170,4 +171,3 @@ section {
   left: 60px;
   top: 100px;
 }
-
