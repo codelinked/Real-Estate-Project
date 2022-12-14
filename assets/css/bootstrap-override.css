@@ -18,3 +18,9 @@
   padding-bottom: 0rem!important;
 }
 
+/* Contact-Message */
+
+textarea.form-control {
+  resize: none;
+}
+

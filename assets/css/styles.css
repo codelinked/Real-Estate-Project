@@ -71,7 +71,7 @@
   height: 8vh;
   position: absolute;
   z-index: -1;
-  right: 20px;
+  right: 22px;
   bottom: 0;
 }
 
@@ -172,3 +172,4 @@ section {
   left: 60px;
   top: 100px;
 }
+
