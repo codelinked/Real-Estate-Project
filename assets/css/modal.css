@@ -1,28 +1,84 @@
-#modal-sign .nav {
-  border-bottom: solid black 2px;
-  margin: 0 10px;
-}
-
-#modal-sign .nav-link {
-  color: black;
-  margin-left: 28px;
-  margin-bottom: 10px;
-  letter-spacing: 0;
-}
-
 #modal-sign .nav-item {
-  padding-right: 12px;
-  margin-top: 10px;
+  margin: 0;
+  font-size: 16px;
 }
 
-#modal-sign .nav-item:not(:first-child) {
-  margin-left: -80px;
-  border-left: solid black 2px;
+/* Tab Container */
+
+#modal-sign .nav-tabs {
   margin-top: 10px;
+  position: relative;
+  border-color: transparent;
 }
+
+#modal-sign .nav-tabs::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Tabs */
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   border-color: transparent;
-  border-bottom: solid #384DBB 3px;
+  position: relative;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  left: 23%;
+  width: 80px;
+  height: 2px;
+  background-color: #384DBB;
+}
+
+/* Left Tab */
+
+#left-tab {
+  border-right: solid black 1px;
+}
+
+/* Right Tab */
+
+#right-tab {
+  border-left: solid black 1px;
+}
+
+/* Link Color */
+
+#modal-sign .nav-link {
+  color: black;
+  letter-spacing: 0;
+}
+
+/* Link Hover */
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+/* Sign Up */
+
+.sign-form {
+  text-align: center;
+}
+
+.sign-form p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.sign-form a {
+  display: block;
+  text-decoration: none;
 }
 
