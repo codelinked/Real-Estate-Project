@@ -24,3 +24,11 @@ textarea.form-control {
   resize: none;
 }
 
+/* Buttons */
+
+.btn-primary {
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+}
+

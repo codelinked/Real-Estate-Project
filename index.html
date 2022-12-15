@@ -20,33 +20,33 @@
     <div class="modal fade" role="dialog" tabindex="-1" id="modal-sign">
         <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div>
+                <div id="tab">
                     <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li class="nav-item" role="presentation" id="left-tab"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
-                        <li class="nav-item" role="presentation" id="right-tab"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
+                        <li class="nav-item" role="presentation" id="left-tab"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
+                        <li class="nav-item" role="presentation" id="right-tab"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
+                        <div class="tab-pane fade" role="tabpanel" id="tab-1">
                             <div class="container">
                                 <form class="sign-form">
                                     <p>Email Address</p><input class="form-control" type="email">
                                     <p>Phone Number</p><input class="form-control" type="tel">
-                                    <p>Create Password</p><input class="form-control" type="password"><a href="#">Forgot Password?</a><button class="btn btn-primary" type="button">Create Account</button>
+                                    <p>Create Password</p><input class="form-control" type="password"><a href="#">Forgot Password?</a><button class="btn btn-primary account-btn" type="button">Sign In</button>
                                     <hr>
-                                    <p class="text-center">Or connect with:</p><button class="btn btn-primary" type="button">Continue with Apple</button><button class="btn btn-primary" type="button">Continue with Google<br></button>
+                                    <p class="text-center">Or connect with:</p><button class="btn btn-primary apple-btn bottom-btn" type="button">Continue with Apple</button><button class="btn btn-primary google-btn bottom-btn" type="button">Continue with Google<br></button>
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-pane fade" role="tabpanel" id="tab-2">
+                        <div class="tab-pane fade show active" role="tabpanel" id="tab-2">
                             <div class="container">
                                 <form class="sign-form">
                                     <p>First Name</p><input class="form-control" type="text">
                                     <p>Last Name</p><input class="form-control" type="text">
                                     <p>Email Address</p><input class="form-control" type="email">
                                     <p>Phone Number</p><input class="form-control" type="tel">
-                                    <p>Create Password</p><input class="form-control" type="password"><button class="btn btn-primary" type="button">Create Account</button>
+                                    <p>Create Password</p><input class="form-control" type="password"><button class="btn btn-primary account-btn" type="button">Create Account</button>
                                     <hr>
-                                    <p class="text-center">Or connect with:<br></p><button class="btn btn-primary" type="button">Continue with Apple</button><button class="btn btn-primary" type="button">Continue with Google<br></button>
+                                    <p class="text-center">Or connect with:<br></p><button class="btn btn-primary apple-btn bottom-btn" type="button">Continue with Apple</button><button class="btn btn-primary google-btn bottom-btn" type="button">Continue with Google<br></button>
                                 </form>
                             </div>
                         </div>
@@ -77,9 +77,9 @@
     <section id="home" class="home-bg-images">
         <div></div>
         <div class="container">
-            <div class="row float-text">
+            <div class="row gy-xl-4 float-text">
                 <div class="col-xl-5" id="home-left-col"><img class="logo" src="assets/img/logo.png"></div>
-                <div class="col-xl-7 align-self-center" id="home-right-col"><img class="logo-brand" src="assets/img/logo-brand.png">
+                <div class="col-xl-7 align-self-start" id="home-right-col"><img class="logo-brand" src="assets/img/logo-brand.png">
                     <p>Digital Palm Resources is an experienced real estate services provider that offers buyers, sellers, and renters access to the latest resources to make their transactions efficient and seamless. With up-to-date market data, easy-to-use search tools, and knowledgeable team members, Digital Palm Resources is a trusted partner for those looking to optimize their real estate transactions.</p>
                 </div>
             </div>
