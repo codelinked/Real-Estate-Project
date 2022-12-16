@@ -139,8 +139,8 @@
 
 #modal-sign .bottom-btn .fab {
   position: absolute;
-  right: 24px;
-  line-height: 22px;
+  line-height: 21px;
+  margin: 0 24px;
 }
 
 #modal-sign .bottom-btn .fa-apple {
@@ -149,6 +149,14 @@
 
 #modal-sign .bottom-btn .fa-google {
   font-size: 20px;
+}
+
+#modal-sign .bottom-btn .left-icons {
+  left: 0;
+}
+
+#modal-sign .bottom-btn .right-icons {
+  right: 0;
 }
 
 /* Apple Btn */
