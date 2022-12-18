@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap-override.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
@@ -78,8 +79,8 @@
         <div></div>
         <div class="container">
             <div class="row gy-xl-4 float-text">
-                <div class="col-xl-5" id="home-left-col"><img class="logo" src="assets/img/logo.png"></div>
-                <div class="col-xl-7 align-self-start" id="home-right-col"><img class="logo-brand" src="assets/img/logo-brand.png">
+                <div class="col-xl-5 text-center" id="home-left-col"><img class="logo" src="assets/img/logo.png" draggable="false"></div>
+                <div class="col-xl-7 align-self-start text-center" id="home-right-col"><img class="logo-brand" src="assets/img/logo-brand.png" draggable="false">
                     <p>Digital Palm Resources is an experienced real estate services provider that offers buyers, sellers, and renters access to the latest resources to make their transactions efficient and seamless. With up-to-date market data, easy-to-use search tools, and knowledgeable team members, Digital Palm Resources is a trusted partner for those looking to optimize their real estate transactions.</p>
                 </div>
             </div>
@@ -138,13 +139,82 @@
         </div>
     </section>
     <section id="about-us"></section>
-    <section id="services"></section>
+    <section class="d-flex" id="services">
+        <div class="carousel slide carousel-dark" data-bs-ride="false" id="carousel-1">
+            <div class="carousel-inner d-flex align-items-center">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/marketing-and-advertising.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Marketing and advertising</h1>
+                            <p>Real estate agents can help promote property through various marketing channels, such as social media, print advertising, and online listings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/negotiation.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Negotiating</h1>
+                            <p>Agents can help negotiate the sale or rental price of a property on behalf of their clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/pricing.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Advising on pricing</h1>
+                            <p>Real estate agents can provide insights and advice on pricing strategy, based on their knowledge of the local market and comparable sales or rentals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/properties.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Showing properties</h1>
+                            <p>Agents can schedule and conduct tours of properties for potential buyers or renters.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/paperwork.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Handling paperwork</h1>
+                            <p>Real estate agents can help with the paperwork involved in buying, selling, or renting a property, including contracts and other legal documents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-xl-4 align-self-center left-col"><img src="assets/img/carousel/market-analysis.png" draggable="false"></div>
+                        <div class="col align-self-center right-col">
+                            <h1>Providing market analysis</h1>
+                            <p>Agents can provide clients with information about local market trends, such as median home prices, demand for rental properties, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+            <ol class="carousel-indicators d-flex">
+                <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carousel-1" data-bs-slide-to="5"></li>
+            </ol>
+        </div>
+        <hr>
+    </section>
     <section id="contact-us">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-xl-5" id="contact-left-col">
                     <h2>We’d Love To Hear From You!</h2>
-                    <p>You want to get in touch? Fill out the form then reach out and get connected.</p><img id="left-img" src="assets/img/contact-image.png">
+                    <p>You want to get in touch? Fill out the form then reach out and get connected.</p><img id="left-img" src="assets/img/contact-image.png" draggable="false">
                 </div>
                 <div class="col-6" id="contact-right-col">
                     <div class="card mb-5">

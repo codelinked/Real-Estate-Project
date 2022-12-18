@@ -46,6 +46,7 @@
   font-style: normal;
   height: 8vh;
   --bs-navbar-padding-x: 35px;
+  top: -1px;
 }
 
 #nav-logo {
@@ -106,13 +107,12 @@ section {
 }
 
 .float-text p {
+  margin: 0 auto;
   max-width: 500px;
   font-size: 20px;
   text-align: justify;
   font-style: italic;
   color: white;
-  float: right;
-  margin-right: 20px;
 }
 
 .logo {
@@ -124,8 +124,6 @@ section {
 .logo-brand {
   width: 700px;
   height: auto;
-  float: right;
-  margin-right: -80px;
   margin-bottom: -20px;
 }
 
