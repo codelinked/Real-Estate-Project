@@ -104,11 +104,15 @@ section {
   align-items: center;
 }
 
-#home-right-col div {
+#right-col-black-box {
   background-color: rgba(0, 0, 0, 0.5);
   width: 655px;
   height: 356px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .float-text p {
@@ -129,6 +133,7 @@ section {
   width: 600px;
   height: auto;
   margin-bottom: -20px;
+  margin-top: -30px;
 }
 
 /* About Us */
