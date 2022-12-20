@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap-override.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/browse.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/timeline.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navigation" data-bs-smooth-scroll="true">
@@ -24,11 +24,11 @@
             <div class="modal-content">
                 <div id="tab">
                     <ul class="nav nav-tabs nav-justified" role="tablist">
-                        <li class="nav-item" role="presentation" id="left-tab"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
-                        <li class="nav-item" role="presentation" id="right-tab"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
+                        <li class="nav-item" role="presentation" id="left-tab"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Sign In</a></li>
+                        <li class="nav-item" role="presentation" id="right-tab"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Sign Up</a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade" role="tabpanel" id="tab-1">
+                        <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
                             <div class="container">
                                 <form class="sign-form">
                                     <p>Email Address</p><input class="form-control" type="email" placeholder="Email Address">
@@ -38,7 +38,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="tab-pane fade show active" role="tabpanel" id="tab-2">
+                        <div class="tab-pane fade" role="tabpanel" id="tab-2">
                             <div class="container">
                                 <form class="sign-form">
                                     <p>First Name</p><input class="form-control" type="text" placeholder="First Name">
@@ -80,67 +80,57 @@
         <div class="container">
             <div class="row gy-xl-4 float-text">
                 <div class="col-xl-5 text-center" id="home-left-col"><img class="logo" src="assets/img/logo.png" draggable="false"></div>
-                <div class="col-xl-7 align-self-start text-center" id="home-right-col"><img class="logo-brand" src="assets/img/logo-brand.png" draggable="false">
-                    <p>Digital Palm Resources is an experienced real estate services provider that offers buyers, sellers, and renters access to the latest resources to make their transactions efficient and seamless. With up-to-date market data, easy-to-use search tools, and knowledgeable team members, Digital Palm Resources is a trusted partner for those looking to optimize their real estate transactions.</p>
+                <div class="col-xl-7 text-center" id="home-right-col">
+                    <div><img class="logo-brand" src="assets/img/logo-brand.png" draggable="false">
+                        <p>Digital Palm Resources is an experienced real estate services provider that offers buyers, sellers, and renters access to the latest resources to make their transactions efficient and seamless. With up-to-date market data, easy-to-use search tools, and knowledgeable team members, Digital Palm Resources is a trusted partner for those looking to optimize their real estate transactions.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="home-timeline">
-        <div id="top-image-border">
-            <div id="top-image"></div>
-        </div>
+    <section id="home-browse">
+        <div id="home-browse-top-image" class="top-images"></div>
         <div class="container">
-            <div class="row">
-                <div class="col col-lines"><img id="first-line" src="assets/img/timeline/line1.png" draggable="false"></div>
+            <div class="row" id="top-row">
+                <div class="col-md-6" id="timeline-left-col"><img src="assets/img/browse/key-handling1.png" draggable="false">
+                    <p>To sell a house, you need to prepare the home, advertise the property, receive and negotiate offers, prepare documents, transfer utilities, set a closing date, and move out. It is important to plan and execute each step carefully.</p>
+                </div>
+                <div class="col-md-6" id="timeline-right-col"><img src="assets/img/browse/key-handling2.png" draggable="false">
+                    <p>To rent a house, you need to find a property that fits your budget, features, utilities and other services they have. Planning and executing each step can help ensure a successful rental experience.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col col-blue-box">
-                    <div class="img-txt-btn-container float-right"><img src="assets/img/timeline/box1.png" draggable="false">
-                        <div class="paragraph-and-button">
-                            <p>Do you have a plan for moving and settling into your new home?</p><button class="btn btn-primary timeline-green-buttons" type="button">Click Here!</button>
-                        </div>
+                <div class="col" id="bottom-col"><img id="mid-line" src="assets/img/browse/timeline-middle-line.png" draggable="false">
+                    <div id="bottom-box">
+                        <h1>You Can Start A Better Life!</h1>
+                        <p>I can provide resources and guidance to help you understand the steps involved and make informed decisions.</p><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-sign">Sign In</button>
                     </div>
-                </div>
-                <div class="col align-self-center col-texts">
-                    <p class="float-left">“Buying a house is a significant life event that requires careful consideration of one's budget and desired lifestyle, as well as getting pre-approved for a mortgage and conducting a home inspection. It also involves negotiating the price and closing costs and signing the closing paperwork. Having a plan and doing research can help ensure a successful home-buying process.”</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-lines"><img src="assets/img/timeline/line2.png" draggable="false"></div>
-            </div>
-            <div class="row">
-                <div class="col align-self-center col-texts">
-                    <p class="float-right">Selling a house involves preparing the home for sale, advertising the property, receiving and negotiating offers, preparing necessary documents, transferring utilities and other services, setting a date for the closing and moving out, and considering your next steps. A successful sale requires careful planning and execution of each step.</p>
-                </div>
-                <div class="col col-blue-box">
-                    <div class="img-txt-btn-container float-left"><img src="assets/img/timeline/box2.png" draggable="false">
-                        <div class="paragraph-and-button">
-                            <p>What is your asking price for the home?</p><button class="btn btn-primary timeline-green-buttons" type="button">Click Here!</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-lines"><img src="assets/img/timeline/line3.png" draggable="false"></div>
-            </div>
-            <div class="row">
-                <div class="col col-blue-box">
-                    <div class="img-txt-btn-container float-right"><img src="assets/img/timeline/box3.png" draggable="false">
-                        <div class="paragraph-and-button">
-                            <p>What type of rental property are you looking for?</p><button class="btn btn-primary timeline-green-buttons" type="button">Click Here!</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col align-self-center col-texts">
-                    <p class="float-left">“When renting a house, it's important to find a property that fits your budget and desired features, check the landlord's references and the property's condition, understand the rental agreement, transfer utilities and other services, pay the security deposit and first month's rent, obtain renter's insurance, and set a date for moving in. Careful planning and execution of each step can help ensure a successful rental experience.”</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about-us"></section>
+    <section id="about-us">
+        <div id="about-us-top-image" class="top-images"></div>
+        <div class="d-flex justify-content-center align-items-center" id="center-box">
+            <p>Digital Palm Resource is a real estate company that offers a range of services to help clients with their real estate needs. The company's team of professionals is dedicated to providing high-quality service and is committed to helping clients find the perfect property and providing excellent customer service. Digital Palm Resource aims to provide clients with the highest level of satisfaction.</p>
+        </div>
+    </section>
+    <div class="card-group">
+        <div class="card" id="about-left-col">
+            <div class="card-body black-boxes">
+                <p class="card-text">"We recently sold our home with the help of [Real Estate Agent], and we couldn't be happier with the result. [Agent] was professional, knowledgeable, and always had our best interests in mind. [Agent] went above and beyond to market our home and find the right buyer, and was able to sell our home in just a few weeks. We highly recommend [Agent] to anyone looking to sell their home, and are so grateful for all of [Agent]'s hard work and dedication."</p>
+                <p class="card-text text-end">Seller Testimonial</p>
+            </div>
+        </div>
+        <div class="card" id="about-right-col">
+            <div class="card-body black-boxes">
+                <p class="card-text">"We recently rented an apartment with the help of [Real Estate Agent], and it was a great experience. [Agent] was very helpful in finding us the perfect place to call home, and made sure to listen to our needs and preferences. [Agent] was always available to answer our questions and provide valuable insights. We are so grateful to have had [Agent] as our real estate agent, and are loving our new apartment!"</p>
+                <p class="card-text text-end">Renter Testimonial</p>
+            </div>
+        </div>
+    </div>
     <section class="d-flex" id="services">
-        <div class="carousel slide carousel-dark" data-bs-ride="false" id="carousel-1">
+        <div class="carousel slide carousel-dark" data-bs-ride="carousel" id="carousel-1">
             <div class="carousel-inner d-flex align-items-center">
                 <div class="carousel-item active">
                     <div class="row">

@@ -32,3 +32,13 @@ textarea.form-control {
   --bs-btn-active-border-color: transparent;
 }
 
+/* Card */
+
+.card-group {
+  padding: 30px 0;
+}
+
+.card {
+  border: none;
+}
+
