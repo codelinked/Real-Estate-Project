@@ -217,3 +217,80 @@ section {
   color: #32CD32;
   margin-left: 20px;
 }
+
+/* About Us Section */
+
+#about-us {
+  position: relative;
+  background-image: url("../../assets/img/about/about-us-bg.png");
+  background-size: cover;
+}
+
+#about-us-top-image {
+  background-image: url("../../assets/img/about/about-us-top.png");
+  height: 100px;
+}
+
+.top-images {
+  width: 100%;
+  position: absolute;
+  background-size: contain;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+#center-box {
+  background-image: url("../../assets/img/about/about-us-center-image.png");
+  background-repeat: no-repeat;
+  width: 785px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-size: contain;
+}
+
+#center-box p {
+  color: white;
+  text-align: justify;
+  margin-top: 30px;
+  max-width: 575px;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+#about-left-col {
+  border-right: 0.5px solid #000000;
+}
+
+#about-right-col {
+  border-left: 0.5px solid #000000;
+}
+
+.black-boxes {
+  width: 500px;
+  height: 200px;
+  background: #393939;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  margin: 0 auto;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.black-boxes p:nth-child(1) {
+  font-size: 12px;
+  margin: 20px;
+}
+
+.black-boxes p:nth-child(2) {
+  font-size: 14px;
+}
