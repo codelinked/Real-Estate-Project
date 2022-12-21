@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/Inter%20Thin%20BETA.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap-override.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/browse-listings.css">
 </head>
 
@@ -19,10 +20,11 @@
         <div class="container-fluid"><a class="navbar-brand" id="nav-logo" href="#"><img src="assets/img/header-logo.png" height="45" width="300"></a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#buy">Buy</a></li>
                     <li class="nav-item"><a class="nav-link" href="#rent">Rent</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sell">Sell</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item" id="login-btn"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-sign">Log In</a></li>
                     <li class="nav-item" id="sign-up-btn"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-sign">Sign Up</a></li>
                 </ul>
@@ -37,14 +39,19 @@
             </div>
         </div>
     </section>
-    <section id="buy">
-        <div></div>
+    <section id="rent" class="rent-section">
+          <div id="left-col-black-box">
+              <h2>Planning to rent a house?</h2>
+              <h3>Hop in! We got you!</h3>
+              <button class="btn btn-primary green-buttons" id="btn" type="button" onclick="window.location.href='#home-timeline';">BROWSE LISTING</button>
+          </div>
     </section>
-    <section id="rent">
-        <div></div>
-    </section>
-    <section id="sell">
-        <div></div>
+    <section id="sell" class="sell-section">
+          <div id="right-col-black-box">
+              <h2>Planning to sell a house or property?</h2>
+              <h3>We got you covered!</h3>
+              <button class="btn btn-primary green-buttons" id="btn" type="button" onclick="window.location.href='#home-timeline';">BROWSE LISTING</button>
+          </div>
     </section>
     <section id="blog">
         <div></div>
