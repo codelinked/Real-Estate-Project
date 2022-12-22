@@ -6,6 +6,34 @@
   position: relative;
 }
 
+#services-top {
+  text-align: center;
+  margin: 100px auto 50px;
+  color: white;
+  position: relative;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+#services-top::before {
+  left: -1rem;
+}
+
+#services-top::after {
+  bottom: -0.5rem;
+  right: -1rem;
+  transform: rotate(180deg);
+}
+
+#services-top::before, #services-top::after {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-top: 0.2rem solid white;
+  border-left: 0.2rem solid white;
+}
+
 #carousel-1 {
   width: 600px;
   margin: auto;
