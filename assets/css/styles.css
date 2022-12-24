@@ -20,12 +20,6 @@
   font-weight: bold;
 }
 
-#header-button {
-  position: relative!important;
-  left: 0;
-  top: 0;
-}
-
 .green-buttons {
   position: absolute;
   left: 0;
@@ -94,6 +88,9 @@
 
 section {
   min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Home Section */
@@ -226,44 +223,55 @@ section {
 /* Contact Section */
 
 #contact-us {
-  background-color: #408DADCC;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
-#contact-right-col {
-  margin-left: 35px;
-  font-family: 'Inter Regular';
+#contact-container {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
 }
 
-#contact-right-col .card, #contact-right-col .card-body {
-  background-color: #D9D9D9;
-  border-radius: 30px;
+#texts-container {
+  height: 351px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #343434;
+  color: white;
+  padding: 0 90px;
+}
+
+#texts-container hr {
+  border-top: 1px solid white;
+  opacity: 1;
+}
+
+#texts-container p {
+  font-size: 15px;
+  max-width: 210px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+#contact-us .card, #contact-right-col .card-body {
   width: 700px;
+  background-color: #4CA7CE;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0;
 }
 
-#contact-right-col button {
-  background-color: #4CA7CECC;
+#contact-us button {
   font-size: 12px;
   width: 70px!important;
   height: 27px;
   line-height: 0;
-}
-
-#contact-left-col {
-  margin-left: -50px;
-  position: relative;
-  color: white;
-}
-
-#contact-left-col h2 {
-  font-family: 'Inter Regular';
-}
-
-#left-img {
-  position: absolute;
-  width: 352px;
-  left: 60px;
-  top: 100px;
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
 }
 
