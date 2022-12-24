@@ -106,6 +106,7 @@
   width: 210px;
   height: 35px;
   margin-top: 15px;
+  position: relative;
   color: rgba(255, 255, 255, 0.85);
 }
 
