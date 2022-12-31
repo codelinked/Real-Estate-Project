@@ -1,6 +1,6 @@
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(55, 55, 55, 0.95)!important;
+  background-color: rgba(55, 55, 55, 0.95) !important;
   padding: 30px 0;
 }
 
@@ -48,8 +48,8 @@
 }
 
 #footer-logo {
-  width: 100px!important;
-  margin-bottom: 30px!important;
+  width: 100px !important;
+  margin-bottom: 30px !important;
 }
 
 .footer-middle-col {

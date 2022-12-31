@@ -41,7 +41,7 @@
   background-color: transparent;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active::after {
+#modal-sign .nav-tabs .nav-item.show .nav-link, #modal-sign .nav-tabs .nav-link.active::after {
   content: '';
   position: absolute;
   bottom: 7px;

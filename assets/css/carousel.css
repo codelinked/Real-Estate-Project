@@ -8,7 +8,7 @@
 
 #services-top {
   text-align: center;
-  margin: 100px auto 50px;
+  margin: 75px auto 25px;
   color: white;
   position: relative;
   font-weight: bold;
@@ -100,7 +100,7 @@
 
 .carousel-indicators .active {
   opacity: 1;
-  background-color: rgba(64, 141, 173, 0.8)!important;
+  background-color: rgba(64, 141, 173, 0.8) !important;
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
@@ -113,13 +113,12 @@
 }
 
 #services hr {
-  margin: 1rem 0;
   width: 35%;
   margin: 0 auto;
   left: 0;
   right: 0;
   border: 0;
-  bottom: 18%;
+  bottom: 7%;
   position: absolute;
   border-top: 3px solid white;
   opacity: 1;
