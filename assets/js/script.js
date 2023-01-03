@@ -13,7 +13,11 @@ $("#single-name-display-1").html(fileName);
 $('#single-image-upload-2').change(function(e){
 var fileName = e.target.files[0].name;
 $("#single-name-display-2").html(fileName); 
-        });     
+        }); 
+$('#single-image-upload-reserve').change(function(e){
+var fileName = e.target.files[0].name;
+$("#single-name-display-reserve").html(fileName); 
+        }); 
     
 $('#multiple-image-upload-1').change(function(){
     for(var i = 0 ; i < this.files.length ; i++){

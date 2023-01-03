@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
     <link rel="stylesheet" href="assets/css/Inter%20Thin%20BETA.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-override.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/property-details.css">
 </head>
 
@@ -34,6 +34,51 @@
     </nav>
     <nav id="three-links"><a href="#overview">Overview</a><a href="#location">Location</a><a href="#gallery">Gallery</a></nav>
     <section id="overview">
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-buyers-guide">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="guide-container">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Buyer's Guide</h4><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>1. Communicate with us in real-time. Get in touch with any of our trusted Property Consultants.<br>2. Click the Reserve Now button. Fill out the reservation form, and click Proceed to Payment button.<br>3. After your reservation, an email will be sent to you as confirmation. Comply with the required documents. Expect a call from Digital Palm Resources representative within 24 Hours for phone verification.<br></p>
+                            <p>Let us assist you better.<br>Reach us at: (+639) 12 345 6789<br>example@digitalpalmresources.com.ph<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-reserve-form">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="guide-container">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Reservation</h4><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="sign-form">
+                                <h5 class="text-start fst-italic">Personal Information:</h5>
+                                <p>First Name&nbsp;<span>*</span></p><input class="form-control" type="text">
+                                <p>Middle Name&nbsp;<span>*</span></p><input class="form-control" type="text">
+                                <p>Surname&nbsp;<span>*</span></p><input class="form-control" type="text">
+                                <p>Home Address&nbsp;<span>*</span></p><input class="form-control" type="text">
+                                <p>Email Address&nbsp;<span>*</span></p><input class="form-control" type="email">
+                                <p>Mobile Number&nbsp;<span>*</span></p><input class="form-control" type="tel">
+                                <p>Upload Photo of your Valid ID&nbsp;<span>*</span></p>
+                                <div class="image-upload-container">
+                                    <div class="img-box"><label class="form-label">Choose a Photo...<input class="form-control image-upload" type="file" id="single-image-upload-reserve"></label></div>
+                                </div>
+                                <p id="single-name-display-reserve" class="file-name-s-display"></p>
+                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-reserve"><label class="form-check-label" for="formCheck-1">I affirm that I have read, understood and hereby accept the Terms and Conditions of the Digital Palm Resources, Inc. ("Company") Website Privacy Policy and that I consent to the collection, storage, use, disclosure and processing by the company and any third party it authorizes, including its affiliates and their respective officers, employees, agents, representatives and personnel of such information disclosed.<br></label></div>
+                                <div class="g-recaptcha" data-sitekey="client_key"></div>
+                            </form>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button><button class="btn btn-primary" id="btn-proceed" type="button">Proceed to Payment</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6" id="overview-left-col">
@@ -44,7 +89,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
                 </div>
                 <div class="col-md-6" id="overview-right-col">
-                    <div></div><button class="btn btn-primary" type="button">Buyer's Guide</button><button class="btn btn-primary" type="button">Reserve Non</button>
+                    <div></div><button class="btn btn-primary guide-btn" type="button" data-bs-target="#modal-buyers-guide" data-bs-toggle="modal">Buyer's Guide</button><button class="btn btn-primary" type="button" data-bs-target="#modal-reserve-form" data-bs-toggle="modal">Reserve Now</button>
                 </div>
             </div>
         </div>
@@ -74,18 +119,26 @@
         </section>
     </section>
     <section id="gallery">
-        <div class="carousel slide" data-bs-ride="false" id="carousel-gallery">
-            <div class="carousel-inner">
-                <div class="carousel-item active"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
-                <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
-                <div class="carousel-item"><img class="w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" alt="Slide Image"></div>
+        <h1 class="text-center text-decoration-underline">Property Brand Name</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><img src="https://i.imgur.com/weXVL8M.jpg" alt="Hills"></div>
+                            <div class="carousel-item"><img src="https://i.imgur.com/Rpxx6wU.jpg" alt="Hills"></div>
+                            <div class="carousel-item"><img src="https://i.imgur.com/83fandJ.jpg" alt="Hills"></div>
+                            <div class="carousel-item"><img src="https://i.imgur.com/JiQ9Ppv.jpg" alt="Hills"></div>
+                        </div><a class="carousel-control-prev" href="#custCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a><a class="carousel-control-next" href="#custCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"><a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"><img class="img-fluid" src="https://i.imgur.com/weXVL8M.jpg"></a></li>
+                            <li class="list-inline-item"><a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"><img class="img-fluid" src="https://i.imgur.com/Rpxx6wU.jpg"></a></li>
+                            <li class="list-inline-item"><a id="carousel-selector-3" data-slide-to="2" data-target="#custCarousel"><img class="img-fluid" src="https://i.imgur.com/83fandJ.jpg"></a></li>
+                            <li class="list-inline-item"><a id="carousel-selector-4" data-slide-to="3" data-target="#custCarousel"><img class="img-fluid" src="https://i.imgur.com/JiQ9Ppv.jpg"></a></li>
+                        </ol>
+                    </div>
+                </div>
             </div>
-            <div><a class="carousel-control-prev" href="#carousel-gallery" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-gallery" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carousel-gallery" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carousel-gallery" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carousel-gallery" data-bs-slide-to="2"></li>
-            </ol>
         </div>
     </section>
     <footer class="text-white bg-dark">
@@ -124,8 +177,10 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/captcha.js"></script>
 </body>
 

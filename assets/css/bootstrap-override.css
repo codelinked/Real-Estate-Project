@@ -42,3 +42,7 @@ textarea.form-control {
   border: none;
 }
 
+ol, ul {
+  padding-left: 1rem;
+}
+

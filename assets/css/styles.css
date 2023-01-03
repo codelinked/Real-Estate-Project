@@ -143,6 +143,81 @@ section {
   margin-top: -30px;
 }
 
+/* Home Browse */
+
+#home-browse {
+  padding: 100px 0 75px;
+  position: relative;
+  text-align: center;
+}
+
+#home-browse-top-image {
+  background-image: url("../../assets/img/browse/home-timeline-top.png");
+  top: -20px;
+}
+
+#home-browse img {
+  width: 350px;
+}
+
+#timeline-left-col {
+  border-right: 1px solid #868686;
+}
+
+#timeline-right-col {
+  border-left: 1px solid #868686;
+}
+
+#home-browse #top-row p {
+  width: 300px;
+  font-size: 15px;
+  font-style: italic;
+  margin: 15px auto;
+  text-align: justify;
+  line-height: 15px;
+}
+
+#home-browse #mid-line {
+  width: 600px;
+}
+
+#home-browse #bottom-col img {
+  margin: 20px auto;
+}
+
+#home-browse #bottom-box {
+  background-image: url("../../assets/img/browse/timeline-center-image.png");
+  background-repeat: no-repeat;
+  width: 1081px;
+  height: 248px;
+  margin: 0 auto;
+  background-size: contain;
+}
+
+#bottom-box {
+  color: white;
+  padding: 70px 0;
+}
+
+#bottom-box h1 {
+  font-size: 30px;
+}
+
+#bottom-box p {
+  font-size: 12px;
+}
+
+#bottom-box button {
+  width: 150px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  line-height: 0;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 0;
+}
+
 /* About Us */
 
 #about-us {
@@ -195,7 +270,7 @@ section {
 .black-boxes {
   width: 500px;
   height: 200px;
-  background: #393939;
+  background-color: #393939;
   border-radius: 5px;
   color: white;
   font-weight: 400;
@@ -215,7 +290,135 @@ section {
   font-size: 14px;
 }
 
+/* Services Carousel */
+
 /* Contact Section */
+
+#services {
+  background-image: url("../../assets/img/carousel/services-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+#services-top {
+  text-align: center;
+  margin: 75px auto 25px;
+  color: white;
+  position: relative;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+#services-top::before {
+  left: -1rem;
+}
+
+#services-top::after {
+  bottom: -0.5rem;
+  right: -1rem;
+  transform: rotate(180deg);
+}
+
+#services-top::before, #services-top::after {
+  content: '';
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-top: 0.2rem solid white;
+  border-left: 0.2rem solid white;
+}
+
+#carousel-1 {
+  width: 600px;
+  margin: auto;
+  position: relative;
+  height: 300px;
+}
+
+#carousel-1 .carousel-inner {
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(183, 183, 183, 0.5);
+  border-radius: 20px;
+  padding: 10px 50px;
+  height: 300px;
+}
+
+#carousel-1 .right-col h1 {
+  font-size: 25px;
+}
+
+#carousel-1 .right-col p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+#carousel-1 .carousel-control-prev {
+  left: -100px;
+  opacity: 1;
+}
+
+#carousel-1 .carousel-control-next {
+  right: -100px;
+  opacity: 1;
+}
+
+#carousel-1 img {
+  width: 130px;
+}
+
+#carousel-1 .carousel-control-prev-icon {
+  background-image: url("../../assets/img/carousel/p-btn.png");
+  height: 50px;
+}
+
+#carousel-1 .carousel-control-next-icon {
+  background-image: url("../../assets/img/carousel/n-btn.png");
+  height: 50px;
+}
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+
+#carousel-1 .carousel-indicators {
+  position: absolute;
+  top: -50px;
+  bottom: 300px;
+  justify-content: space-between;
+  background-image: url("../../assets/img/carousel/line-indicate.png");
+  background-repeat: no-repeat;
+  width: 85%;
+  background-size: contain;
+  margin: 0 auto;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: rgba(64, 141, 173, 0.8) !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: white;
+  border-radius: 100%;
+  width: 16px;
+  height: 16px;
+  margin: -8px 2px;
+  opacity: 1;
+}
+
+#services hr {
+  width: 35%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  border: 0;
+  bottom: 7%;
+  position: absolute;
+  border-top: 3px solid white;
+  opacity: 1;
+}
 
 #contact-us {
   text-align: center;

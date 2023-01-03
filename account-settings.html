@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Digital Palm Resources | Account Settings</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Thin%20BETA.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-override.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/account-settings.css">
+</head>
+
+<body>
+    <div id="tab-container">
+        <ul class="nav nav-tabs flex-column" role="tablist">
+            <li class="nav-item just-text" role="presentation"><a class="nav-link disabled" role="tab" data-bs-toggle="tab">Account</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#personal-information">Personal Information</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#password-authentication">Password and Authentication</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#notifications">Notifications</a></li>
+            <li class="nav-item just-text" role="presentation"><a class="nav-link disabled" role="tab" data-bs-toggle="tab">Access</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#payments">Payments</a></li>
+            <li class="nav-item just-text" role="presentation"><a class="nav-link disabled" role="tab" data-bs-toggle="tab">Services</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#customer-care">Customer Care</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#report-problem">Report a Problem</a></li>
+            <li class="nav-item just-text" role="presentation"><a class="nav-link disabled" role="tab" data-bs-toggle="tab">Legal Policies</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#privacy-policy">Privacy Policy</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#terms-condition">Terms and Condition</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade" role="tabpanel" id="personal-information">
+                <div>
+                    <h5>Personal Information</h5>
+                    <div id="personal-info-container">
+                        <div class="row">
+                            <div class="col text-center" id="profile-col"><img src="assets/img/avatar.png"><i class="icon ion-edit"></i></div>
+                            <div class="col">
+                                <p>Name<br>&nbsp; &nbsp; &nbsp; _____________________________</p>
+                                <p>Age<br>&nbsp; &nbsp; &nbsp; _____________________________<br></p>
+                                <p>Sex<br>&nbsp; &nbsp; &nbsp; _____________________________<br></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col bottom-col" id="bottom-left-col">
+                                <p>Email Address<br>&nbsp; &nbsp; &nbsp; _____________________________<br></p>
+                                <p>Phone Number<br>&nbsp; &nbsp; &nbsp; _____________________________<br></p>
+                            </div>
+                            <div class="col bottom-col" id="bottom-right-col">
+                                <p>BIO&nbsp;<i class="icon ion-edit"></i></p><textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="password-authentication">
+                <div>
+                    <h5>Password and Authentication</h5>
+                    <div id="password-authentication-container">
+                        <div class="row">
+                            <div class="col" id="change-pass-col">
+                                <h3>Change Password</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Current Password</p><input type="password">
+                                <p>New Password</p><input type="password">
+                                <p>Confirm Password</p><input type="password">
+                            </div>
+                            <div class="col-5 col-xxl-5" id="col-rules">
+                                <div>
+                                    <p class="fw-bold">Rules</p>
+                                    <p>To create a new password, you have to meet all of the requirements:</p>
+                                    <ul>
+                                        <li>Minimum of 8 characters</li>
+                                        <li>Upper and lowercase letters</li>
+                                        <li>At least one number</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" id="two-factor-col">
+                                <h4>Two-factor Authentication</h4>
+                                <p>Two-factor authentication adds an additional layer of security to your account by requiring more than just a password to sign in.</p><button class="btn btn-primary" type="button">Enable two-factor authentication</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="notifications">
+                <div>
+                    <h5>Notifications</h5>
+                    <div id="notifications-container">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Notification Settings</h3>
+                                <p>You can turn these on if you want to see the activities you get about.</p>
+                                <hr>
+                                <div class="toggle-container"><label class="form-label switch"><input type="checkbox"><span class="slider round"></span></label>
+                                    <hr><span class="fw-bold">Get Emails</span><span>&nbsp;- To find out what what’s going on when you’re offline.</span>
+                                </div>
+                                <div class="toggle-container"><label class="form-label switch"><input type="checkbox"><span class="slider round"></span></label>
+                                    <hr><span class="fw-bold">News</span><span>&nbsp;- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+                                </div>
+                                <div class="toggle-container"><label class="form-label switch"><input type="checkbox"><span class="slider round"></span></label>
+                                    <hr><span class="fw-bold">Updates</span><span>&nbsp;- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+                                </div>
+                                <div class="toggle-container"><label class="form-label switch"><input type="checkbox"><span class="slider round"></span></label>
+                                    <hr><span class="fw-bold">Comments</span><span>&nbsp;- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+                                </div>
+                                <div class="toggle-container"><label class="form-label switch"><input type="checkbox"><span class="slider round"></span></label>
+                                    <hr><span class="fw-bold">Reminders</span><span>&nbsp;- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show active" role="tabpanel" id="payments">
+                <div>
+                    <h5>Payments</h5>
+                    <div id="payments-container">
+                        <div class="row">
+                            <div class="col">
+                                <p>How do you want to pay?</p>
+                                <div id="payments-grid"><a href="#">Maya<img src="assets/img/payments/paymaya.png"></a><a href="#">Payoneer<img src="assets/img/payments/payoneer.png"></a><a href="#">Paypal<img src="assets/img/payments/paypal.png"></a><a href="#">Debit Card<img src="assets/img/payments/credit_or_debit_card.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="customer-care">
+                <p>Content for tab 1.</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="report-problem">
+                <p>Content for tab 1.</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="privacy-policy">
+                <p>Content for tab 1.</p>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="terms-condition">
+                <p>Content for tab 1.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
