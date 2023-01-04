@@ -73,6 +73,10 @@ section {
   min-height: 80vh;
 }
 
+textarea {
+  resize: none;
+}
+
 /* header */
 
 .home-bg-images {
@@ -87,29 +91,6 @@ section {
   background-image: url("../../assets/img/home-image.png");
   background-position: center;
   overflow: hidden;
-}
-
-#home-right-col {
-  margin-top: 150px;
-}
-
-.header {
-  color: white;
-}
-
-.search {
-  position: relative;
-  height: 50px;
-}
-
-.search .input {
-  background-color: #fff;
-  border: 0;
-  font-size: 18px;
-  padding: 15px;
-  height: 50px;
-  width: 100%;
-  transition: width 0.3s ease;
 }
 
 .btn {
@@ -132,7 +113,7 @@ section {
 
 /* rent section */
 
-#rent {
+#rent, #buy {
   background-image: url("../../assets/img/rent-bg.png");
   background-position: center;
   overflow: hidden;
@@ -213,14 +194,6 @@ section {
 
 /* Rent-Sell Form Section */
 
-#rent-sell-form #tab-1, #rent-sell-form #tab-2 {
-  padding: 50px 25px;
-}
-
-#rent-sell-form .nav-tabs {
-  border: none;
-}
-
 #rent-sell-form .nav-link:focus, .nav-link:hover {
   color: black;
 }
@@ -243,56 +216,7 @@ section {
   display: none;
 }
 
-#rent-sell-form .nav-link {
-  color: black;
-  position: relative;
-}
-
-#rent-sell-form .nav-link:hover::after {
-  display: block;
-}
-
-#rent-sell-form p span {
-  color: red;
-}
-
 /* Image Upload */
-
-.fst-italic {
-  margin: 50px 0;
-  font-weight: bold;
-}
-
-#rent-sell-form p {
-  margin: 20px 0 0;
-}
-
-.image-upload-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  background-color: white;
-  height: 300px;
-  margin: 0 auto;
-  border: 1px solid gray;
-}
-
-#multiple-upload-container-1, #multiple-upload-container-1 {
-  height: 200px;
-}
-
-.img-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../../assets/img/image-box.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 150px;
-  height: 150px;
-  margin-top: 15px;
-}
 
 .form-label {
   cursor: pointer;
@@ -318,23 +242,9 @@ section {
   border: 1px solid gray;
 }
 
-#property-info-container-1, #property-info-container-2 {
-  display: flex;
-}
-
-.fill-up-description {
-  min-height: calc(10em + .75rem + 2px) !important;
-}
-
 .form-check {
   margin: 20px 75px;
   text-align: center;
-}
-
-#formCheck-1, #formCheck-2 {
-  width: 50px;
-  height: 50px;
-  float: none;
 }
 
 .form-check-label {
@@ -343,15 +253,6 @@ section {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
-}
-
-.fill-up-btn {
-  position: relative !important;
-  width: 400px;
-  height: 65px;
-  font-size: 30px;
-  background-color: grey;
-  margin: 20px 0;
 }
 
 /* Captcha */
@@ -372,10 +273,136 @@ section {
   opacity: 0;
 }
 
+/* Pop Page 1 */
+
+#modal-page-1 {
+  --bs-modal-border-width: 0;
+}
+
+#modal-page-1 .modal-header {
+  border-bottom: none;
+}
+
+#modal-page-1 .container {
+  margin: -30px 0;
+}
+
+#modal-page-1 span {
+  color: red;
+}
+
+#modal-page-1 #single-name-display-popup {
+  height: 100px;
+}
+
+#modal-page-1 .col-form-label {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+}
+
+/* Pop Page 2 */
+
+#modal-page-2 {
+  --bs-modal-border-width: 0;
+}
+
+#modal-page-2 .modal-header {
+  border-bottom: none;
+}
+
+#modal-page-2 .container {
+  margin: -30px 0;
+}
+
+#modal-page-2 span {
+  color: red;
+}
+
+#modal-page-2 .dropdown button {
+  position: relative;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 100;
+  margin: 0;
+}
+
+#modal-page-2 #single-name-display-popup {
+  height: 100px;
+  margin: 10px 0;
+}
+
+#modal-page-2 .col-form-label {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 150px;
+}
+
+#modal-page-2 .form-check {
+  margin: 30px 0;
+}
+
+#modal-page-2 .form-check-label {
+  margin: 0;
+}
+
+#modal-page-2 textarea {
+  width: 100%;
+  height: 150px;
+}
+
+#upload-col {
+  border: 1px solid black;
+}
+
+#upload-row {
+  border: 1px solid black;
+  padding-right: 23px;
+}
+
+#formCheck-reserve {
+  width: 30px;
+  height: 30px;
+}
+
+#modal-page-2 .form-check label {
+  font-size: 15px;
+  width: 90%;
+}
+
+/* Modal Footer */
+
+.modal-footer {
+  border-top: none;
+  margin-top: 25px;
+}
+
+.modal-footer .btn {
+  position: relative;
+  width: 145px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.next-submit {
+  background-color: gray;
+}
+
 /* Rent and Sell Grid */
 
 #rent-grid, #sell-grid {
-  padding: 150px 0 100px;
+  padding-bottom: 50px;
 }
 
 .grid-heading {
@@ -398,17 +425,24 @@ section {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   row-gap: 120px;
 }
 
 .grid div {
-  width: 500px;
-  height: 500px;
-  background-image: url("../../assets/img/wireframe-box.png");
+  width: 250px;
+  height: 250px;
+  background-image: url("../../assets/img/image-box.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.grid div div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .grid div p {
@@ -424,18 +458,11 @@ section {
   background-color: transparent;
   color: black;
   width: 200px;
-  left: 0;
-  top: 0;
-  margin: auto;
+  top: -100px;
   right: 0;
   line-height: 0;
-  bottom: 0;
-}
-
-.view-more-btn .icon {
-  font-size: 30px;
-  position: relative;
-  left: 15px;
-  top: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 

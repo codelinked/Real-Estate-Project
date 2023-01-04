@@ -96,41 +96,20 @@ section {
   color: red;
 }
 
-#modal-reserve-form p {
+#modal-reserve-form p:not(.file-name-s-display) {
   margin: 20px 0 0;
+}
+
+#modal-reserve-form .col-form-label {
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
 }
 
 .fst-italic {
   font-weight: normal;
-}
-
-.image-upload-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 200px;
-  margin: 0 auto;
-  border: 1px solid gray;
-}
-
-.img-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../../assets/img/image-box.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 150px;
-  height: 150px;
-  margin-top: 15px;
-}
-
-#modal-reserve-form .form-label {
-  cursor: pointer;
-  padding: 50px 10px;
-  margin-top: -15px;
-  color: black;
 }
 
 .image-upload {
@@ -142,13 +121,18 @@ section {
 
 .file-name-s-display {
   width: 100%;
-  margin-right: 25px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 10px 20px;
   border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+#reserve-row {
+  text-align: center;
 }
 
 #formCheck-reserve {
@@ -216,6 +200,18 @@ section {
   margin: 0 25px;
   font-size: 25px;
   color: black;
+}
+
+.price-and-type {
+  margin: 0;
+}
+
+.price-and-type:nth-of-type(1) {
+  margin: 30px 0 0;
+}
+
+.price-and-type:nth-of-type(2) {
+  margin: 0 0 30px;
 }
 
 #overview-left-col span {

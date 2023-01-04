@@ -53,7 +53,16 @@
 }
 
 .footer-middle-col {
-  text-align: center;
+  text-align: start;
+}
+
+.footer-middle-col p:first-child {
+  text-decoration: underline;
+}
+
+.footer-middle-col:not(#about-col) p:not(:first-child) {
+  line-height: 0;
+  font-size: 11px;
 }
 
 #footer-row #right-col div {
@@ -63,5 +72,10 @@
   display: inline-block;
   border-radius: 100%;
   margin: 0 5px;
+}
+
+#about-col p {
+  width: 230px;
+  text-align: justify;
 }
 

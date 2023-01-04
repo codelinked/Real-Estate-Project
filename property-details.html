@@ -66,11 +66,13 @@
                                 <p>Email Address&nbsp;<span>*</span></p><input class="form-control" type="email">
                                 <p>Mobile Number&nbsp;<span>*</span></p><input class="form-control" type="tel">
                                 <p>Upload Photo of your Valid ID&nbsp;<span>*</span></p>
-                                <div class="image-upload-container">
-                                    <div class="img-box"><label class="form-label">Choose a Photo...<input class="form-control image-upload" type="file" id="single-image-upload-reserve"></label></div>
+                                <div class="row" id="reserve-row">
+                                    <div class="col-xl-8 align-self-center">
+                                        <p id="single-name-display-popup" class="file-name-s-display"></p>
+                                    </div>
+                                    <div class="col-xl-4 align-self-center"><label class="col-form-label">Choose Photo<input class="form-control image-upload" type="file" id="single-image-upload-popup"></label></div>
                                 </div>
-                                <p id="single-name-display-reserve" class="file-name-s-display"></p>
-                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-reserve"><label class="form-check-label" for="formCheck-1">I affirm that I have read, understood and hereby accept the Terms and Conditions of the Digital Palm Resources, Inc. ("Company") Website Privacy Policy and that I consent to the collection, storage, use, disclosure and processing by the company and any third party it authorizes, including its affiliates and their respective officers, employees, agents, representatives and personnel of such information disclosed.<br></label></div>
+                                <div class="form-check text-center"><input class="form-check-input" type="checkbox" id="formCheck-reserve"><label class="form-check-label" for="formCheck-1">I affirm that I have read, understood and hereby accept the Terms and Conditions of the Digital Palm Resources, Inc. ("Company") Website Privacy Policy and that I consent to the collection, storage, use, disclosure and processing by the company and any third party it authorizes, including its affiliates and their respective officers, employees, agents, representatives and personnel of such information disclosed.<br></label></div>
                                 <div class="g-recaptcha" data-sitekey="client_key"></div>
                             </form>
                         </div>
@@ -84,8 +86,8 @@
                 <div class="col-md-6" id="overview-left-col">
                     <h1>Property Project Name</h1>
                     <div><span>Location</span><span>For Sale</span><span>Available</span></div>
-                    <p>Price: $0</p>
-                    <p>Property Type</p>
+                    <p class="price-and-type">Price: $0</p>
+                    <p class="price-and-type">Property Type</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
                 </div>
                 <div class="col-md-6" id="overview-right-col">
@@ -152,14 +154,25 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col footer-middle-col">
-                            <p>Customer Care<br>__________________________<br>__________________________<br>__________________________<br><br></p>
+                        <div class="col-xl-5 footer-middle-col" id="about-col">
+                            <p>About Us</p>
+                            <p>Digital Palm Resource is a real estate where the agent provides high-quality service to clients in order to help them find the perfect property and achieve satisfaction.</p>
                         </div>
-                        <div class="col footer-middle-col">
-                            <p>About Us<br>__________________________<br>__________________________<br>__________________________<br><br></p>
+                        <div class="col-xl-3 footer-middle-col">
+                            <p>Legal Policies</p>
+                            <p>Agent’s Policies</p>
+                            <p>Agent’s Commitment</p>
+                            <p>Terms and Condition</p>
+                            <p>Disclaimer of Liability</p>
                         </div>
-                        <div class="col footer-middle-col">
-                            <p>Legal Policies<br>__________________________<br>__________________________<br>__________________________<br><br></p>
+                        <div class="col-xl-2 footer-middle-col">
+                            <p>Services</p>
+                            <p>Customer Care</p>
+                            <p>Report A Problem</p>
+                        </div>
+                        <div class="col-xl-2 footer-middle-col">
+                            <p>Access</p>
+                            <p>Payments</p>
                         </div>
                     </div>
                 </div>
